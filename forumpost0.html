@@ -2513,6 +2513,111 @@ High-level instructions:
 
 3. If there are separate cert files (crt + pem), place them in host location path that is mapped to /config/ovpn. Skip this step if using PIA ovpn files as certs are included in the files.
 
+4. Start docker again</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/96233-support-testdasi-repo/' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>testdasi's Repository</b></font><br><font size='2'><a href='https://github.com/testdasi/testdasi-unraid-repo'>https://github.com/testdasi/testdasi-unraid-repo</a></font><table><tr><td><img src='https://raw.githubusercontent.com/testdasi/simple-dns-doh/master/DNS-icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>DNS-DoH-companion</font></b></td><td><em>A very simple DNS server to connect to DNS-over-HTTPS service. This is similar to my other Pihole-with-DoH docker, without Pihole.
+You have already browsed the web securely with https, don't send your DNS queries in plain text.
+
+This is useful if you want to route DNS through a OpenVPN client docker (using --net=container: extra parameter) or just want encrypted DNS for your network / devices without any bells and whistles.
+
+Make sure to assign an IP (macvlan bridge) or map 53 to a different port (normal bridge). Docker will not start otherwise.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/96233-support-testdasi-repo' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/testdasi/grafana-unraid-stack-base/master/grafana-unraid-stack.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Grafana-Unraid-Stack</font></b></td><td><em>Meet Gus! He has everything you need to start monitoring Unraid in style (Grafana - Influxdb - Telegraf - Loki - Promtail).
+
+NOTE: Grafana always requires some customisation to suit each exact system.
+
+Includes both GUS demo Dashboard and Ultimate UNRAID Dashboard v1.3 (UUD - https://forums.unraid.net/topic/96895-ultimate-unraid-dashboard-uud/).
+
+High-level instructions: (1) Decide whether you want hddtemp or S.M.A.R.T (smartmontools) and set USE_HDDTEMP variable accordingly. Hint: GUS and UUD both use S.M.A.R.T  (2) Install docker with host network.  (3) Go to ip:3006 to access grafana, login with admin/admin and customize away.
+
+For more detailed instructions, refer to the support thread (https://forums.unraid.net/topic/96233-support-testdasi-repo/) or project page (https://github.com/testdasi/grafana-unraid-stack).</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/96233-support-testdasi-repo/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/testdasi/openvpn-client-aio-base/master/openvpn-simple.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>OpenVPN-AIO-Client</font></b></td><td><em>An "all-in-one" docker for all your private browsing needs (including OpenVPN client with nftables kill switch ; Socks5 + HTTP proxy to both VPN and TOR (the onion router) ; DNS server to DoT (DNS-over-TLS) services). 
+
+NOTE: you must place your own OpenVPN configuration to the host path that is mapped to /etc/openvpn (The ovpn file must be named openvpn.ovpn. Credentials + certs can be in the same file or split out into multiple files - the flexibility is yours.) 
+
+Set DNS_SERVERS to 127.2.2.2 to use DNS-over-TLS (use google and cloudflare services by default). Your DNS query out of the VPN exit will also be encrypted for even more security. Set it to other services IP's will use normal unencrypted services. 
+
+Set HOST_NETWORK to your Unraid server network in CIDR format e.g. 192.168.1.0/24.
+
+For more detailed instructions, refer to the support thread (https://forums.unraid.net/topic/96233-support-testdasi-repo/) or project page (https://github.com/testdasi/openvpn-client-aio).</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/96233-support-testdasi-repo/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/testdasi/openvpn-client-aio-base/master/openvpn-simple.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>OpenVPN-AIO-Client-Torless</font></b></td><td><em>An "all-in-one" docker for all your private browsing needs (including OpenVPN client with nftables kill switch ; Socks5 + HTTP proxy to the VPN ; DNS server to DoT (DNS-over-TLS) services). It's the same as OpenVPN AIO Client docker but without TOR. 
+
+NOTE: you must place your own OpenVPN configuration to the host path that is mapped to /etc/openvpn (The ovpn file must be named openvpn.ovpn. Credentials + certs can be in the same file or split out into multiple files - the flexibility is yours.) 
+
+Set DNS_SERVERS to 127.2.2.2 to use DNS-over-TLS (use google and cloudflare services by default). Your DNS query out of the VPN exit will also be encrypted for even more security. Set it to other services IP's will use normal unencrypted services. 
+
+Set HOST_NETWORK to your Unraid server network in CIDR format e.g. 192.168.1.0/24.
+
+For more detailed instructions, refer to the support thread (https://forums.unraid.net/topic/96233-support-testdasi-repo/) or project page (https://github.com/testdasi/openvpn-client-aio).</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/96233-support-testdasi-repo/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/testdasi/openvpn-hydesa-base/master/openvpn-hydesa.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>OpenVPN-HyDeSa</font></b></td><td><em>OpenVPN Client with integrated (NZB)Hydra2-Deluge-Sabnzbd (and HTTP + SOCKS5 proxies). Now with a Web GUI quick launch.
+
+High-level instructions: (1) Create an appdata folder in host and create a openvpn subfolder. (2) Copy your OpenVPN configuration to the above openvpn subfolder (must include openvpn.ovpn + credentials + certs). (3) Don't forget to map /data in the docker to the host (you can map the parent or individual subfolders depending on needs). (4) Start docker (other apps should configure themselves on first run).
+
+DON'T FORGET THE OVPN FILE!!!
+
+Default password for deluge is deluge
+
+Set DNS_SERVERS to 127.2.2.2 to use DNS-over-TLS (use google and cloudflare services by default). Your DNS query out of the VPN exit will also be encrypted for even more security. Set it to other services IP's will use normal unencrypted services. 
+
+Set HOST_NETWORK to your Unraid server network in CIDR format e.g. 192.168.1.0/24.
+
+For more detailed instructions, refer to the support thread (https://forums.unraid.net/topic/96233-support-testdasi-repo/) or project page (https://github.com/testdasi/openvpn-hydesa).</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/96233-support-testdasi-repo/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/testdasi/openvpn-hyrosa-base/master/openvpn-hyrosa.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>OpenVPN-HyRoSa</font></b></td><td><em>OpenVPN Client with integrated (NZB)Hydra2-RTorrent (Flood GUI)-Sabnzbd (and HTTP + SOCKS5 proxies). Now with a Web GUI quick launch.
+
+High-level instructions: (1) Create an appdata folder in host and create a openvpn subfolder. (2) Copy your OpenVPN configuration to the above openvpn subfolder (must include openvpn.ovpn + credentials + certs). (3) Don't forget to map /data in the docker to the host (you can map the parent or individual subfolders depending on needs). (4) Start docker (other apps should configure themselves on first run).
+
+DON'T FORGET THE OVPN FILE!!!
+
+Default login to flood is admin/flood
+
+Set DNS_SERVERS to 127.2.2.2 to use DNS-over-TLS (use google and cloudflare services by default). Your DNS query out of the VPN exit will also be encrypted for even more security. Set it to other services IP's will use normal unencrypted services. 
+
+Set HOST_NETWORK to your Unraid server network in CIDR format e.g. 192.168.1.0/24.
+
+For more detailed instructions, refer to the support thread (https://forums.unraid.net/topic/96233-support-testdasi-repo/) or project page (https://github.com/testdasi/openvpn-hyrosa).</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/96233-support-testdasi-repo/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/testdasi/pihole-base-buster-plus/master/pi_hole_bw.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Pihole-DoT-DoH</font></b></td><td><em>Pi-Hole - let's block those pesky ads! Now with DNS-over-HTTPS and DNS-over-TLS! pihole.doh!
+    Don't send your DNS queries in plain text.
+    
+    YOU MUST ASSIGN A STATIC IP TO THE DOCKER FOR PIHOLE TO WORK.
+    
+    You must set both DNS1 and DNS2 variables to 127.1.1.1#5153 (DoH) and/or 127.2.2.2#5253 (DoT). To use just DoH or just DoT, set both DNS1 and DNS2 to the same value.
+    
+    Otherwise, same instructions as official Pi-Hole.
+    
+        NOTE 1: Port 53 can only be used with custom br0/br1 network and a static IP address.
+    
+        NOTE 2: DNS lookup rarely ever works with ports other than 53 i.e. see note above about static IP.
+    
+        NOTE 3: UnRaid network settings DNS server cannot point to a docker IP.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/96233-support-testdasi-repo/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/testdasi/pihole-base-buster-plus/master/pi_hole_bw.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>pihole-with-doh</font></b></td><td><em>Pi-Hole - let's block those pesky ads! Now with DNS-over-HTTPS! DoH!
+    You have already browsed the web securely with https, don't send your DNS queries in plain text.
+    
+    This docker uses the official Pi-Hole template with added Cloudflared to enable DoH (DNS-over-HTTPS).
+    
+    Your DNS queries are now encrypted.
+    
+    
+    Set both DNS1 and DNS2 to 127.1.1.1#5153 will exclusively use DoH. These are default values.
+    
+    Otherwise, same instructions as official Pi-Hole.
+    
+        NOTE 1: Port 53 can only be used with custom br0/br1 network and a unique IP address.
+    
+        NOTE 2: UnRaid network settings DNS server cannot point to a docker IP.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/96233-support-testdasi-repo/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/testdasi/pihole-base-buster-plus/master/pi_hole_bw.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>pihole-with-dot</font></b></td><td><em>Pi-Hole - let's block those pesky ads! Now with DNS-over-TLS!
+    You have already browsed the web securely with https, don't send your DNS queries in plain text.
+    
+    This docker uses the official Pi-Hole template with added stubby to enable DoT (DNS-over-TLS).
+    
+    Your DNS queries are now encrypted.
+    
+    
+    Set both DNS1 and DNS2 to 127.2.2.2#5253 will exclusively use DoT. These are default values.
+    
+    Otherwise, same instructions as official Pi-Hole.
+    
+        NOTE 1: Port 53 can only be used with custom br0/br1 network and a unique IP address.
+    
+        NOTE 2: UnRaid network settings DNS server cannot point to a docker IP.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/96233-support-testdasi-repo/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/testdasi/rutorrentvpn-plus-plus/master/rtorrent.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>rutorrentvpn-plus-plus</font></b></td><td><em>Based on binhex/arch-rtorrentvpn.
+
+ruTorrent with OpenVPN client, http proxy, dns-over-tls and a random ovpn picker (useful to cycle to another server if current one stops working).
+
+High-level instructions:
+1. Run docker - first run will stop itself due to missing ovpn file
+
+2. Copy / extract your ovpn files in the host path that is mapped to /config/ovpn_files (at least 1 file is required, must have .ovpn extension)
+
+3. If there are separate cert files (crt + pem), place them in host location path that is mapped to /config/ovpn. Skip this step if using PIA ovpn files as certs are included in the files.
+
 4. Start docker again</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/96233-support-testdasi-repo/' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>TheBrian's Repository</b></font><br><font size='2'><a href='https://github.com/brianmiller/docker-templates'>https://github.com/brianmiller/docker-templates</a></font><table><tr><td><img src='https://raw.githubusercontent.com/brianmiller/docker-templates/master/intel-gpu-telegraf/intel_telegraf.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>intel-gpu-telegraf</font></b></td><td><em>Docker container running telegraf and polling Intel GPU stats.</em></td><td><font color='red'><a href='mailto:brian@phospher.com' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>theone's Repository</b></font><br><font size='2'><a href='https://github.com/Squidly271/theone-plugin-repository/'>https://github.com/Squidly271/theone-plugin-repository/</a></font><table><tr><td><img src='https://raw.githubusercontent.com/Squidly271/theone-plugin-repository/master/serverlayout.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Server Layout</font></b></td><td><em>The Server Layout plugin enables you to view the devices (HDDs, CD/DVD ROMS) in a physical manner.
 You can configure the server's disk tray layout, assign each storage device to a drive tray and enter additional data manually (Purchase Date, etc)</em></td><td><font color='red'><a href='http://lime-technology.com/forum/index.php?topic=40223.0' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/Squidly271/theone-plugin-repository/master/swapfile.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>SwapFile</font></b></td><td><em>If you are low on memory and would like to add a Swap File to your unRAID server this plugin makes it simpler.
 The plugin enables creation/starting/stopping/changing of a Swap File on your unRAID server.</em></td><td><font color='red'><a href='http://lime-technology.com/forum/index.php?topic=25816.0' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>thetarkus' Repository</b></font><br><font size='2'><a href='https://github.com/thetarkus/docker-templates'>https://github.com/thetarkus/docker-templates</a></font><table><tr><td><img src='https://raw.githubusercontent.com/thetarkus/docker-templates/master/images/beets-logo.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>beets</font></b></td><td><em>Beets is the media library management system for obsessive-compulsive music
