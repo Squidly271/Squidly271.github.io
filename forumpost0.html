@@ -2852,4 +2852,14 @@ Use of a Google Coral Accelerator is optional, but highly recommended. On my Int
     *Uses a very low overhead motion detection to determine where to run object detection
     *Object detection with Tensorflow runs in a separate process
     *Object info is published over MQTT for integration into HomeAssistant as a binary sensor
+    *An endpoint is available to view an MJPEG stream for debugging, but should not be used continuously</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/98064-support-blakeblackshear-frigate/' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>yayitazale's Repository</b></font><br><font size='2'><a href='https://github.com/yayitazale/unraid-templates'>https://github.com/yayitazale/unraid-templates</a></font><table><tr><td><img src='https://raw.githubusercontent.com/yayitazale/unraid-templates/main/frigate_unraid.PNG' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>frigate</font></b></td><td><em>NVR With Realtime Object Detection for IP Cameras
+
+Uses OpenCV and Tensorflow to perform realtime object detection locally for IP cameras. Designed for integration with HomeAssistant or others via MQTT.
+
+Use of a Google Coral Accelerator is optional, but highly recommended. On my Intel i7 processor, I can process 2-3 FPS with the CPU. The Coral can process 100+ FPS with very low CPU load.
+
+    *Leverages multiprocessing heavily with an emphasis on realtime over processing every frame
+    *Uses a very low overhead motion detection to determine where to run object detection
+    *Object detection with Tensorflow runs in a separate process
+    *Object info is published over MQTT for integration into HomeAssistant as a binary sensor
     *An endpoint is available to view an MJPEG stream for debugging, but should not be used continuously</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/98064-support-blakeblackshear-frigate/' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>zyphermonkey's Repository</b></font><br><font size='2'><a href='https://github.com/zyphermonkey/docker-templates'>https://github.com/zyphermonkey/docker-templates</a></font><table><tr><td><img src='https://i.imgur.com/KKoQMo6.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>splunk</font></b></td><td><em>Splunk Splunk captures, indexes, and correlates real-time data in a searchable repository from which it can generate graphs, reports, alerts, dashboards, and visualizations. Try it as your remote syslog server!</em></td></tr></table></body></html>
