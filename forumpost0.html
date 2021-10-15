@@ -113,14 +113,7 @@ cron options are updated on docker restart.
 cronjob changes doesnt require a restart.
 
 to test the cronjob functions 
-docker exec -it <dockername> ./config/cronjob.sh</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xteve, in docker with cronjobs
-
-docker runs in host mode 
-access xteve webui ip:34400/web/
-
-after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them
-
-cron and xteve start options are updated on docker restart.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xTeVe is a M3U proxy server for Plex, Emby and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats.
+docker exec -it <dockername> ./config/cronjob.sh</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xTeVe is a M3U proxy server for Plex, Emby and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats.
 
 Image Maintainer: LeeD 
 
@@ -128,7 +121,14 @@ For support come visit us at our xTeVe Discord channel: https://discord.gg/eWYqu
 
 For config, visit dockerhub link
 
-i just provided the template for unraid, for support see upper note</em></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve_g2g_owi</font></b></td><td><em>xteve, guide2go, owi2plex in one docker with cron
+i just provided the template for unraid, for support see upper note</em></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xteve, in docker with cronjobs
+
+docker runs in host mode 
+access xteve webui ip:34400/web/
+
+after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them
+
+cron and xteve start options are updated on docker restart.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve_g2g_owi</font></b></td><td><em>xteve, guide2go, owi2plex in one docker with cron
 
 access xteve webui ip:34400/web/
 
@@ -876,24 +876,7 @@ WebUI to match.
 This image runs a redis server so if you are already hosting one you will need to add 
 -r YOUR_REDIST_SERVER:YOUR_REDIS_PORT at the very least to post arguments. The
 format that -r takes is the following: [h[:port[:pwd]]][@db-id] 
-You will also want this container to start after your redis container so it doesn't conflict.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/105443-support-cschanot-docker-templates/' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>cschanot's Repository</b></font><br><font size='2'><a href='https://github.com/cschanot/docker-templates'>https://github.com/cschanot/docker-templates</a></font><table><tr><td><img src='https://raw.githubusercontent.com/cschanot/docker-templates/main/images/kibana.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>kibana</font></b></td><td><em>Kibana gives shape to any kind of data — structured and unstructured — indexed in Elasticsearch.  
-
-Please install and run Elasticsearch docker first. Set the tag to it to match the one you are using 
-on Kibana (currently 7.12.0)
-
-Change ELASTIC_SEARCH_HOSTS to match the address of your Elasticsearch</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/105443-support-cschanot-docker-templates/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/cschanot/docker-templates/main/images/ntopng-icon-150x150.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>ntopng</font></b></td><td><em>High-Speed Web-based Traffic Analysis and Flow Collection 
-
-
-
-Click advanced view and in post arguments change eth0 to the network interface you want to monitor.
-Since this is running host mode you can change the default port of 3000 to whatever you need by by
-changing the --http-port in post arguments to the port you would like to use. Don't forget to change
-WebUI to match.
-
-This image runs a redis server so if you are already hosting one you will need to add 
--r YOUR_REDIST_SERVER:YOUR_REDIS_PORT at the very least to post arguments. The
-format that -r takes is the following: [h[:port[:pwd]]][@db-id] 
-You will also want this container to start after your redis container so it doesn't conflict.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/105443-support-cschanot-docker-templates/' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>CyaOnDaNet's Repository</b></font><br><font size='2'><a href='https://github.com/CyaOnDaNet/unraid-templates'>https://github.com/CyaOnDaNet/unraid-templates</a></font><table><tr><td><img src='https://user-images.githubusercontent.com/22354631/72322110-80e74300-3673-11ea-8c38-32b85c1c36b4.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>plex_discord_role_management</font></b></td><td><em>A discord bot that synchronizes with Tautulli and Sonarr to deliver tailored notifications.
+You will also want this container to start after your redis container so it doesn't conflict.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/105443-support-cschanot-docker-templates/' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>cyansmoker's Repository</b></font><br><font size='2'><a href='https://github.com/glauth/unraid-glauth'>https://github.com/glauth/unraid-glauth</a></font><table><tr><td><img src='https://raw.githubusercontent.com/glauth/glauth.github.io/master/assets/logo.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>GLauth</font></b></td><td><em>GLAuth is a secure, easy-to-use, LDAP server with configurable backends.</em></td></tr><tr><td><img src='https://raw.githubusercontent.com/glauth/glauth.github.io/master/assets/logo.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>GLauth_and_Plugins</font></b></td><td><em>GLAuth is a secure, easy-to-use, LDAP server with configurable backends. Pluggable backends are included.</em></td></tr></table><font size='7'><b>CyaOnDaNet's Repository</b></font><br><font size='2'><a href='https://github.com/CyaOnDaNet/unraid-templates'>https://github.com/CyaOnDaNet/unraid-templates</a></font><table><tr><td><img src='https://user-images.githubusercontent.com/22354631/72322110-80e74300-3673-11ea-8c38-32b85c1c36b4.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>plex_discord_role_management</font></b></td><td><em>A discord bot that synchronizes with Tautulli and Sonarr to deliver tailored notifications.
 
 Visit https://discordapp.com/developers/applications/me for Bot Token.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/87382-plex-discord-role-management-docker-support-thread/' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>d8ahazard's Repository</b></font><br><font size='2'><a href='https://github.com/d8ahazard/unraid-repository'>https://github.com/d8ahazard/unraid-repository</a></font><table><tr><td><img src='https://github.com/d8ahazard/Phlex/raw/master/img/android-icon-144x144.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>FlexConnect</font></b></td><td><em>
     FlexConnect is a stand-alone version of the FlexTV Plugin. It is intended as a replacement once Plex sunsest the plugin feature. This is currently for development purposes only.
@@ -1611,6 +1594,31 @@ while asserting that they have been spun down, does not in fact spin them down
 This plugin attempts to ensure that SAS drives spin down and up in sync with Unraid
 schedule (i.e. same as SATA drives).
 </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/97351-plugin-spin-down-sas-drives/' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>dsmith44's Repository</b></font><br><font size='2'><a href='https://github.com/deasmi/unraid-ca'>https://github.com/deasmi/unraid-ca</a></font><table><tr><td><img src='https://raw.githubusercontent.com/deasmi/docker-puppetmaster/master/logo.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>puppetmaster</font></b></td><td><em>Simple puppet master docker based on Centos7
+  # docker-puppetmaster
+  Docker image for puppet server v5 designed to run on unraid
+  If you want the 3.5 version please use docker-puppetmaster:v3 which is currently using puppet 3.5.7
+
+  This is super basic, you have to map /etc/puppet and /etc/puppet/ssl as the confdir and ssl dir
+
+  You must have the conf directory setup, it will not be populated - map to /etc/puppetlabs/puppet
+  You must have the code directory setup, it will not be created - map to /etc/puppetlabs/code
+  However an empty SSL directory is fine, puppet will set this up.
+
+  Also include puppet-lint in case you want to check in the docker container.
+  Also includes perl for a script I run on puppetmaster for staggering puppet run times.
+  </em></td><td><font color='red'><a href='https://forums.lime-technology.com/topic/58535-puppetmaster-docker-container/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/deasmi/unraid-tailscale/master/logo.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Tailscale</font></b></td><td><em>Private networks made easy
+
+Connect all your devices using WireGuard,® without the hassle.
+Tailscale makes it as easy as installing an app and signing in.
+
+This container sets up tailscale for unraid.
+
+It will register as hostname unraid, if you want to change that see 'Extra Parameters' below and change to the hostname you would like.
+
+** IMPORTANT When you first start this container you must check the log file for the logon URL and then enter it into a browser and logon to tail scale. I would then also advise setting the keys to not expire for your unraid host **
+
+** Note that this will expose your whole server into your tailscale VPN network ** 
+Do not do this if you do not understand what that means.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/90719-will-move-to-ca-tailscale-support-thread/' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>dsmith44's Repository</b></font><br><font size='2'><a href='https://github.com/deasmi/unraid-ca'>https://github.com/deasmi/unraid-ca</a></font><table><tr><td><img src='https://raw.githubusercontent.com/deasmi/docker-puppetmaster/master/logo.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>puppetmaster</font></b></td><td><em>Simple puppet master docker based on Centos7
   # docker-puppetmaster
   Docker image for puppet server v5 designed to run on unraid
   If you want the 3.5 version please use docker-puppetmaster:v3 which is currently using puppet 3.5.7
@@ -4512,16 +4520,16 @@ Default Login ID & Password is [ admin / 12345 ]</em></td><td><font color='red'>
  - Automatically stores reading progress[br]
  - Built-in MangaDex downloader[br]
  - The web reader is responsive and works well on mobile, so there is no need for a mobile app[br]
-  </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/monica.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>monica</font></b></td><td><em>Monica, the Personal Relationship Manager
-[br][br]
-Complete list of env : https://raw.githubusercontent.com/monicahq/monica/master/.env.example
-[br][br]
-APP_URL: https://github.com/monicahq/monica/blob/master/docs/installation/ssl.md
   </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/monica.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>monica</font></b></td><td><em>
 Please Use monica rather than monicahq/monicahq
 
 
 Monica, the Personal Relationship Manager 
+[br][br]
+Complete list of env : https://raw.githubusercontent.com/monicahq/monica/master/.env.example
+[br][br]
+APP_URL: https://github.com/monicahq/monica/blob/master/docs/installation/ssl.md
+  </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/monica.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>monica</font></b></td><td><em>Monica, the Personal Relationship Manager
 [br][br]
 Complete list of env : https://raw.githubusercontent.com/monicahq/monica/master/.env.example
 [br][br]
