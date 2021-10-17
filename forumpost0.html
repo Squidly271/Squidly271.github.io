@@ -113,7 +113,14 @@ cron options are updated on docker restart.
 cronjob changes doesnt require a restart.
 
 to test the cronjob functions 
-docker exec -it <dockername> ./config/cronjob.sh</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xTeVe is a M3U proxy server for Plex, Emby and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats.
+docker exec -it <dockername> ./config/cronjob.sh</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xteve, in docker with cronjobs
+
+docker runs in host mode 
+access xteve webui ip:34400/web/
+
+after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them
+
+cron and xteve start options are updated on docker restart.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xTeVe is a M3U proxy server for Plex, Emby and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats.
 
 Image Maintainer: LeeD 
 
@@ -121,14 +128,7 @@ For support come visit us at our xTeVe Discord channel: https://discord.gg/eWYqu
 
 For config, visit dockerhub link
 
-i just provided the template for unraid, for support see upper note</em></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xteve, in docker with cronjobs
-
-docker runs in host mode 
-access xteve webui ip:34400/web/
-
-after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them
-
-cron and xteve start options are updated on docker restart.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve_g2g_owi</font></b></td><td><em>xteve, guide2go, owi2plex in one docker with cron
+i just provided the template for unraid, for support see upper note</em></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve_g2g_owi</font></b></td><td><em>xteve, guide2go, owi2plex in one docker with cron
 
 access xteve webui ip:34400/web/
 
@@ -3784,79 +3784,11 @@ After the first run turn off the docker and modify your client config and mail.t
     2. If you want to enable "https" ther is a certificate file in /config "https_certs.txt" paste the contents of that file in the webui[br]
  	Theese certs are generated on container install, delete the file if you want to generate new certs.
 
-  </em></td><td><font color='red'><a href='http://lime-technology.com/forum/index.php?topic=40630.0' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>macester's Repository</b></font><br><font size='2'><a href='https://github.com/macexx/docker-templates'>https://github.com/macexx/docker-templates</a></font><table><tr><td><img src='https://i.imgur.com/PKa3Sm2.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>CloudFlare</font></b></td><td><em>
-    CloudFlare is a free DNS host that can act as a reverse proxy for websites. Its network protects, speeds up, and improves availability for a website or mobile application with a change in DNS.[br][br]
-    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-    Click [b]"Advanced View"[/b] in the upper right corner.[br]
-	Scroll down and change the [b]Environment Variables[/b] to match your CloudFlare details.
-  </em></td><td><font color='red'><a href='http://lime-technology.com/forum/index.php?topic=40630.0' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://i.imgur.com/pa3eozo.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>DarkStat</font></b></td><td><em>
-    Captures network traffic, calculates statistics about usage, and serves reports over HTTP.[br][br]
-    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-    [b]/config[/b] This is where Darkstat will store it´s database and logs[br]
-    [br]
-    [b][span style='color: #E80000;']Notes[/span][/b][br]
-    [u]Environment Variables[/u][br]
-    Define the variables,[br][br]
-	[b]ETH[/b] (Match your unRAID interface, don´t use "br0" use eth0, eth1 etc...)[br]
-	[b]PORT[/b] (Port for WebUI, if changed don't forget to change it in Additional Fields)[br]
-	[b]IP_HOST[/b] (IP of unRAID server)[br]
-	[b]IP_RANGE[/b] (IP-range of the local network)[br][br]
-  </em></td><td><font color='red'><a href='https://lime-technology.com/forum/index.php?topic=40630.0' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://i.imgur.com/KQ9migV.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>DDclient</font></b></td><td><em>
-    Ddclient is a Perl client used to update dynamic DNS entries for accounts on 'Dynamic DNS Network Services' free DNS service. It currently supports a lot of different routers and a few different services..[br][br]
-    This version also had built in support for sending updates with a gmail account as relay.[br][br]
-    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-    Click [b]"Advanced View"[/b] in the upper right corner.[br]
-    Change the mail paramter to yes or no.[br]
-	For email notofications scroll down to [b]Extra Parameters[/b] and add a fqdn some thing like "-h ddclient.local" or "-h ddclient.mydomain.com" this can be anything you like.[br]
-After the first run turn off the docker and modify your client config and mail.txt(for mail support) in your config directory.
-  </em></td><td><font color='red'><a href='http://lime-technology.com/forum/index.php?topic=40630.0' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/macexx/docker-templates/master/images/tplink-icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>EAPcontroller</font></b></td><td><em>
-    TP-LINK's free EAP Controller Software allows users to easily manage hundreds of TPLINK EAPs in multiple sites with the controller in a single location.[br][br]
-    [b][span style='color: #E80000;']Directions:[/span][/b][br]
-    [b]/config[/b] : The host path needs to have a direct path, example "/mnt/cache" or /mnt/disk1 or mongodb cant start(cant handle unraid "shfs")[br][br]
-    [b]Custom certificate[/b] Stop the container and put the cert in "/config/cert" it needs to be named "mydomain.p12" and have the password "tplink".
-  </em></td><td><font color='red'><a href='http://lime-technology.com/forum/index.php?topic=40630.0' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://img12.deviantart.net/63a9/i/2013/010/6/5/openvpn_icon_by_archeinre-d5r1nls.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>OpenVPN-AS</font></b></td><td><em>
-    OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI,[br]
-        and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments. OpenVPN Access Server supports a wide range of configurations,[br]
-        including secure and granular remote access to internal network and/ or private cloud network resources and applications with fine-grained access control.[br]
-        This version includes two free user licenses.[br][br]
-    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-    [b]/usr/local/openvpn_as[/b] This is where OpenVPN will store it´s configuration and data[br]
-    [br]
-    [b][span style='color: #E80000;']Notes[/span][/b][br]
-    [u]Environment Variables[/u][br]
-    Define a variable if there is any need to change listening interface(default is eth0),[br]
-        Click the Advanced view in the top right corner . [br]
-		Add a variable under Environment Variables: [br]
-		Variable Name: [b]INTERFACE[/b] Variable Value: [b]br0[/b] (example values: eth1, br0, bond0)[br][br]
-    [u]Installation[/u][br]
-        Default Username: [b][span style='color: #E80000;']"admin"[/span][/b] Password: [b][span style='color: #E80000;']"openvpn"[/span] Usernames/Passwords can be changed or added in webui [/b].[br]
-    1. Go to https://your_ip/hostname:943/admin[br]
-    2. Ports 1194/udp 9443/tcp(443/tcp) needs to be forwarded and opened in your Firewall/Router. (1194/udp 9443/tcp can be changed in the WebUI)[br][br]
-        [u]Configuring OpenVPN Server[/u][br]
-        Go to https://openvpn.net/index.php/access-server/overview.html for HOWTO on setting it up.
-  </em></td><td><font color='red'><a href='http://lime-technology.com/forum/index.php?topic=40630.0' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/macexx/docker-templates/master/images/qbittorrent_icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>qbittorrent</font></b></td><td><em>
-    The qBittorrent project aims to provide a Free Software alternative to µTorrent. ,[br][br]
-    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-    [b]/config[/b] This is where qBittorrent will store it´s configuration[br]
-    [b]/downloads[/b] This is where qBittorrent download torrents to[br]
-    [b]/watched[/b] This is folder qBittorrent will look for torrents aka. "Blackhole", needs to be enabled in the webui[br]
-    [b]Default[/b] Username/Password is defualt (admin/adminadmin)[br]
-    [br]
-    [b][span style='color: #E80000;']Notes[/span][/b][br]
-    [u]Environment Variables[/u][br]
-    Define a variables needed,[br]
-        Click the Advanced view in the top right corner . [br]
-		Add/Change a variable under Environment Variables if needed: [br]
-		Variable Name: [b]AUSER[/b] Variable Value: [b]99[/b] (This is the "UID" that the torrents will download as)[br][br]
-		Variable Name: [b]AGROUP[/b] Variable Value: [b]100[/b] (This is the "GID" that the torrents will download as)[br][br]
-                Variable Name: [b]PIPEWORK[/b] Variable Value: [b]yes[/b] (if you want to enable pipework network "wait for interface up")
-    [u]Installation[/u][br]
-        Default Username: [b][span style='color: #E80000;']"admin"[/span][/b] Password: [b][span style='color: #E80000;']"adminadmin"[/span][/b].[br]
-    1. Go to http://your_ip/:8082/[br]
-    2. If you want to enable "https" ther is a certificate file in /config "https_certs.txt" paste the contents of that file in the webui[br]
- 	Theese certs are generated on container install, delete the file if you want to generate new certs.
-
-  </em></td><td><font color='red'><a href='http://lime-technology.com/forum/index.php?topic=40630.0' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>magmpzero's Repository</b></font><br><font size='2'><a href='https://github.com/magmpzero/docker-templates'>https://github.com/magmpzero/docker-templates</a></font><table><tr><td><img src='https://booksonic.org/assets/img/booksonic.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Booksonic</font></b></td><td><em>
+  </em></td><td><font color='red'><a href='http://lime-technology.com/forum/index.php?topic=40630.0' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>maddash1337's Repository</b></font><br><font size='2'><a href='https://github.com/patrickstigler/unraid_app_templates'>https://github.com/patrickstigler/unraid_app_templates</a></font><table><tr><td><img src='https://obsproject.com/assets/images/new_icon_small-r.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>obs-ndi</font></b></td><td><em>This container is based on bb12489/gui-docker &amp;amp; bb12489/docker-obs. The OBS with NDI is incorporated into the container and can be used to stream your desktop. The main reason for this fork is to update the container and add it to the unraid app store.&#xD;
+&#xD;
+You can change the default VNC password of '123456' on the docker run command to whatever you wish.&#xD;
+&#xD;
+You can connect with your own VNC client at 5900 or use the webclient at 5901</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/114911-support-obs-ndi/' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>magmpzero's Repository</b></font><br><font size='2'><a href='https://github.com/magmpzero/docker-templates'>https://github.com/magmpzero/docker-templates</a></font><table><tr><td><img src='https://booksonic.org/assets/img/booksonic.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Booksonic</font></b></td><td><em>
   Booksonic is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic.
   </em></td><td><font color='red'><a href='http://lime-technology.com/forum/index.php?topic=54101.0' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/magmpzero/docker-templates/master/icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>MagRack</font></b></td><td><em>
   MagRack is a lightweight java based application to make reading PDF files (magazines) more convienent.  This application does not download magazines.  It is expected the user aleady has automation setup for magazine downloading.
