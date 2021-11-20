@@ -113,7 +113,14 @@ cron options are updated on docker restart.
 cronjob changes doesnt require a restart.
 
 to test the cronjob functions 
-docker exec -it <dockername> ./config/cronjob.sh</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xTeVe is a M3U proxy server for Plex, Emby and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats.
+docker exec -it <dockername> ./config/cronjob.sh</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xteve, in docker with cronjobs
+
+docker runs in host mode 
+access xteve webui ip:34400/web/
+
+after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them
+
+cron and xteve start options are updated on docker restart.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xTeVe is a M3U proxy server for Plex, Emby and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats.
 
 Image Maintainer: LeeD 
 
@@ -121,14 +128,7 @@ For support come visit us at our xTeVe Discord channel: https://discord.gg/eWYqu
 
 For config, visit dockerhub link
 
-i just provided the template for unraid, for support see upper note</em></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xteve, in docker with cronjobs
-
-docker runs in host mode 
-access xteve webui ip:34400/web/
-
-after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them
-
-cron and xteve start options are updated on docker restart.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve_g2g_owi</font></b></td><td><em>xteve, guide2go, owi2plex in one docker with cron
+i just provided the template for unraid, for support see upper note</em></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve_g2g_owi</font></b></td><td><em>xteve, guide2go, owi2plex in one docker with cron
 
 access xteve webui ip:34400/web/
 
@@ -4501,42 +4501,18 @@ FOG Project is completely free for commericial use.
 Support is completely free, and backed by our thriving forum community of over 30,000 users. </em></td></tr><tr><td><img src='https://raw.githubusercontent.com/redvex2460/docker-templates/master/redvex2460/images/lancache.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Lancache</font></b></td><td><em>This docker container provides a caching proxy server for game download content. For any network with more than one PC gamer in connected this will drastically reduce internet bandwidth consumption.</em></td></tr><tr><td><img src='https://raw.githubusercontent.com/redvex2460/docker-templates/master/redvex2460/images/lancache.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Lancache-DNS</font></b></td><td><em>This docker container provides DNS entries for caching services to be used in conjunction with a container.
 The DNS is generated automatically at startup of the container</em></td></tr><tr><td><img src='https://raw.githubusercontent.com/redvex2460/docker-templates/master/redvex2460/images/vman.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Virt-Manager</font></b></td><td><em>The virt-manager application is a desktop user interface for managing virtual machines through libvirt.
 It primarily targets KVM VMs.
-It presents a summary view of running domains, their live performance & resource utilization statistics, wizards enable the creation of new domains, and configuration & adjustment of a domain’s resource allocation & virtual hardware. An embedded VNC and SPICE client viewer presents a full graphical console to the guest domain.</em></td></tr></table><font size='7'><b>RedVex's Repository</b></font><br><font size='2'><a href='https://github.com/redvex2460/docker-templates'>https://github.com/redvex2460/docker-templates</a></font><table><tr><td><img src='https://raw.githubusercontent.com/Squidly271/community.applications/master/source/community.applications/usr/local/emhttp/plugins/community.applications/images/question.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Autofiller.Web</font></b></td><td><em>With lancache-autofill (formal known as Autofill.Web) you automatically fill a lancache with the content you want.
-Just search an App, add it to the Queue and download it via Autofill.Web to fill it in your lancache,
-if it´s sucessfully downloaded you other steam clients could download it with full networkspeed, without using your WAN (Internet)
+It presents a summary view of running domains, their live performance & resource utilization statistics, wizards enable the creation of new domains, and configuration & adjustment of a domain’s resource allocation & virtual hardware. An embedded VNC and SPICE client viewer presents a full graphical console to the guest domain.</em></td></tr></table><font size='7'><b>reven's Repository</b></font><br><font size='2'><a href='https://github.com/revenz/FileFlowsUnraid'>https://github.com/revenz/FileFlowsUnraid</a></font><table><tr><td><img src='https://raw.githubusercontent.com/revenz/FileFlows/master/icon.png?raw=true' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>FileFlow</font></b></td><td><em>FileFlow is a app that lets you process files in a rule flow like system.
 
-Rewritten by Me, Idea: Zeropingheroes/lancache-autofill</em></td><td><font color='red'><a href='https://discord.gg/egVNBW53Dq' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/redvex2460/docker-templates/master/redvex2460/images/discoloader.jpg' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>DiscoLoader</font></b></td><td><em>Discordbot for JDownloader
+You can setup rules like when a video file is detected, detect if it has black bars, reencode video to certain format, move file, delete original.  Or if file is greater than this size delete etc.
 
-Current Features:
-Slashcommand integration
-Adding Links
-Query Status of Downloads
-
-Information:
-After the first start of the docker, please navigate to your appdata folder and edit the settingsfile of the bot.</em></td></tr><tr><td><img src='https://raw.githubusercontent.com/redvex2460/docker-templates/master/redvex2460/images/discoloader.jpg' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>DiscoLoader</font></b></td><td><em>Discordbot for JDownloader
-
-Current Features:
-Slashcommand integration
-Adding Links
-Query Status of Downloads
-
-Information:
-After the first start of the docker, please navigate to your appdata folder and edit the settingsfile of the bot.</em></td></tr><tr><td><img src='https://raw.githubusercontent.com/redvex2460/docker-templates/master/redvex2460/images/discoloader.jpg' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>DiscoLoader</font></b></td><td><em>Discordbot for JDownloader
-
-Current Features:
-Slashcommand integration
-Adding Links
-Query Status of Downloads
-
-Information:
-After the first start of the docker, please navigate to your appdata folder and edit the settingsfile of the bot.</em></td></tr><tr><td><img src='https://raw.githubusercontent.com/redvex2460/docker-templates/master/redvex2460/images/fogproject.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>FogProject</font></b></td><td><em>FOG Project can capture, deploy, and manage Windows, Mac OSX, and various Linux distributions.
-Computers can be securely managed with FOG Project remotely, from anywhere in the world
-
-FOG Project is completely free for commericial use.
-Support is completely free, and backed by our thriving forum community of over 30,000 users. </em></td></tr><tr><td><img src='https://raw.githubusercontent.com/redvex2460/docker-templates/master/redvex2460/images/lancache.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Lancache</font></b></td><td><em>This docker container provides a caching proxy server for game download content. For any network with more than one PC gamer in connected this will drastically reduce internet bandwidth consumption.</em></td></tr><tr><td><img src='https://raw.githubusercontent.com/redvex2460/docker-templates/master/redvex2460/images/lancache.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Lancache-DNS</font></b></td><td><em>This docker container provides DNS entries for caching services to be used in conjunction with a container.
-The DNS is generated automatically at startup of the container</em></td></tr><tr><td><img src='https://raw.githubusercontent.com/redvex2460/docker-templates/master/redvex2460/images/vman.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Virt-Manager</font></b></td><td><em>The virt-manager application is a desktop user interface for managing virtual machines through libvirt.
-It primarily targets KVM VMs.
-It presents a summary view of running domains, their live performance & resource utilization statistics, wizards enable the creation of new domains, and configuration & adjustment of a domain’s resource allocation & virtual hardware. An embedded VNC and SPICE client viewer presents a full graphical console to the guest domain.</em></td></tr></table><font size='7'><b>rge's Repository</b></font><br><font size='2'><a href='https://github.com/wger-project/unraid-templates'>https://github.com/wger-project/unraid-templates</a></font><table><tr><td><img src='
+[br][b][u][span style='color: #E80000;']Advanced settings[/span][/u][/b]
+[br][b][span style='color: #0000E8;']Nvidia GPU Use:[/span][/b]
+        [br] 1) Install the Unraid Nvidia Driver Plugin.
+        [br] 2) Toggle this Docker Container template editor to [b]"Advanced View"[/b].
+        [br] 3) In the [b]"Extra Parameters"[/b] field, add "[b]--runtime=nvidia[/b]".
+        [br] 4) Expand the template "Show more settings..." section.
+        [br] 5) In the [b]"NVIDIA_VISIBLE_DEVICES"[/b] variable, copy your [b]GPU UUID[/b] (can be found in the Unraid Nvidia Plugin)
+    </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/116225-support-reven-fileflows/' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>rge's Repository</b></font><br><font size='2'><a href='https://github.com/wger-project/unraid-templates'>https://github.com/wger-project/unraid-templates</a></font><table><tr><td><img src='
         https://raw.githubusercontent.com/wger-project/wger/master/wger/core/static/images/logos/logo.png
     ' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>wger-unraid</font></b></td><td><em>wger (ˈvɛɡɐ) Workout Manager is a free, open source web
         application that help you manage your personal workouts, weight and diet plans and can also
@@ -4592,11 +4568,11 @@ Enter a video url to download the video to the server. Url can be to YouTube or 
 Just navigate to http://{{address}}:{{port}}/youtube-dl and enter the requested {{url}}.
 
 curl -X POST --data-urlencode "url={{url}}" http://{{address}}:{{port}}/youtube-dl/q[br][br]
-[b]/youtube-dl[/b] : Downloads go there [br]</em></td></tr></table><font size='7'><b>SAL-e's Repository</b></font><br><font size='2'><a href='https://github.com/SAL-e/docker-templates'>https://github.com/SAL-e/docker-templates</a></font><table><tr><td><img src='https://phpipam.net/css/images/logo_icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>phpIPAM-cron</font></b></td><td><em>phpIPAM - Open source IP address management.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/92885-support-sal-e-phpipam/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://phpipam.net/css/images/logo_icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>phpIPAM-www</font></b></td><td><em>phpIPAM - Open source IP address management.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/92885-support-sal-e-phpipam/' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>sdesbure's Repository</b></font><br><font size='2'><a href='https://github.com/sdesbure/docker-containers'>https://github.com/sdesbure/docker-containers</a></font><table><tr><td><img src='https://raw.githubusercontent.com/sdesbure/docker-containers/master/images/domoticz-icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Domoticz</font></b></td><td><em>
-    An Home automation Server
-  </em></td><td><font color='red'><a href='https://lime-technology.com/forum/index.php?topic=41543.0' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/sdesbure/docker-containers/master/images/t411-torznab-icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Domoticz</font></b></td><td><em>
+[b]/youtube-dl[/b] : Downloads go there [br]</em></td></tr></table><font size='7'><b>SAL-e's Repository</b></font><br><font size='2'><a href='https://github.com/SAL-e/docker-templates'>https://github.com/SAL-e/docker-templates</a></font><table><tr><td><img src='https://phpipam.net/css/images/logo_icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>phpIPAM-cron</font></b></td><td><em>phpIPAM - Open source IP address management.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/92885-support-sal-e-phpipam/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://phpipam.net/css/images/logo_icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>phpIPAM-www</font></b></td><td><em>phpIPAM - Open source IP address management.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/92885-support-sal-e-phpipam/' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>sdesbure's Repository</b></font><br><font size='2'><a href='https://github.com/sdesbure/docker-containers'>https://github.com/sdesbure/docker-containers</a></font><table><tr><td><img src='https://raw.githubusercontent.com/sdesbure/docker-containers/master/images/t411-torznab-icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Domoticz</font></b></td><td><em>
     Transform t411 in torznab compatible feeder for sonarr
-  </em></td><td><font color='red'><a href='https://github.com/KiLMaN/T411-Torznab/issues' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/sdesbure/docker-containers/master/images/jackett-icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Jackett</font></b></td><td><em>
+  </em></td><td><font color='red'><a href='https://github.com/KiLMaN/T411-Torznab/issues' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/sdesbure/docker-containers/master/images/domoticz-icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Domoticz</font></b></td><td><em>
+    An Home automation Server
+  </em></td><td><font color='red'><a href='https://lime-technology.com/forum/index.php?topic=41543.0' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/sdesbure/docker-containers/master/images/jackett-icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Jackett</font></b></td><td><em>
     Use just about any tracker with Sonarr
   </em></td><td><font color='red'><a href='https://lime-technology.com/forum/index.php?topic=41543.0' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/sdesbure/docker-containers/master/images/netatmo_librato_logo.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Netatmo-Librato</font></b></td><td><em>
      pushes value from your netatmo thermostat and weather station to librato cloud metrics](https://www.librato.com/
@@ -4712,16 +4688,16 @@ Default Login ID & Password is [ admin / 12345 ]</em></td><td><font color='red'>
  - Automatically stores reading progress[br]
  - Built-in MangaDex downloader[br]
  - The web reader is responsive and works well on mobile, so there is no need for a mobile app[br]
-  </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/monica.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>monica</font></b></td><td><em>Monica, the Personal Relationship Manager
-[br][br]
-Complete list of env : https://raw.githubusercontent.com/monicahq/monica/master/.env.example
-[br][br]
-APP_URL: https://github.com/monicahq/monica/blob/master/docs/installation/ssl.md
   </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/monica.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>monica</font></b></td><td><em>
 Please Use monica rather than monicahq/monicahq
 
 
 Monica, the Personal Relationship Manager 
+[br][br]
+Complete list of env : https://raw.githubusercontent.com/monicahq/monica/master/.env.example
+[br][br]
+APP_URL: https://github.com/monicahq/monica/blob/master/docs/installation/ssl.md
+  </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/monica.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>monica</font></b></td><td><em>Monica, the Personal Relationship Manager
 [br][br]
 Complete list of env : https://raw.githubusercontent.com/monicahq/monica/master/.env.example
 [br][br]
