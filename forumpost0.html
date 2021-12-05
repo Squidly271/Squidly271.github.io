@@ -113,14 +113,7 @@ cron options are updated on docker restart.
 cronjob changes doesnt require a restart.
 
 to test the cronjob functions 
-docker exec -it <dockername> ./config/cronjob.sh</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xteve, in docker with cronjobs
-
-docker runs in host mode 
-access xteve webui ip:34400/web/
-
-after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them
-
-cron and xteve start options are updated on docker restart.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xTeVe is a M3U proxy server for Plex, Emby and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats.
+docker exec -it <dockername> ./config/cronjob.sh</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xTeVe is a M3U proxy server for Plex, Emby and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats.
 
 Image Maintainer: LeeD 
 
@@ -128,7 +121,14 @@ For support come visit us at our xTeVe Discord channel: https://discord.gg/eWYqu
 
 For config, visit dockerhub link
 
-i just provided the template for unraid, for support see upper note</em></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve_g2g_owi</font></b></td><td><em>xteve, guide2go, owi2plex in one docker with cron
+i just provided the template for unraid, for support see upper note</em></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xteve, in docker with cronjobs
+
+docker runs in host mode 
+access xteve webui ip:34400/web/
+
+after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them
+
+cron and xteve start options are updated on docker restart.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve_g2g_owi</font></b></td><td><em>xteve, guide2go, owi2plex in one docker with cron
 
 access xteve webui ip:34400/web/
 
@@ -4901,74 +4901,68 @@ For more info on env variables and setup of your config file, check out: https:/
   or Radarr, simply empty those two fields for that app and it wont be polled.[/b] If you put all your containers on the same
   custom bridge you may not need to expose any ports, and you can use DNS to reach other containers. It's a very convenient configuration!
   </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/bitwardenrs.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>vaultwarden</font></b></td><td><em>Vaultwarden (formerly bitwarden_rs) is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.
-    [br][br]
+    
     Basically full implementation of Bitwarden API is provided including: 
-    [br][br]
+    
     -Basic single user functionality
-    [br]
+    
     -Organizations support
-    [br]
+    
     -Attachments
-    [br]
+    
     -Vault API support
-    [br]
+    
     -Serving the static files for Vault interface
-    [br]
+    #xD;
     -Website icons API
-    [br]
+    
     -Authenticator and U2F support
-    [br]
+    
     -YubiKey OTP
-    [br][br]
-    For more configuration see the wiki
-    [br]
-    https://github.com/dani-garcia/vaultwarden/wiki
+    
+    For more configuration see the wiki https://github.com/dani-garcia/vaultwarden/wiki
   </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/88086-support-vaultwarden-formerly-bitwarden_rs/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/bitwardenrs.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>vaultwarden</font></b></td><td><em>Vaultwarden (formerly bitwarden_rs) is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.
-    [br][br]
+    
     Basically full implementation of Bitwarden API is provided including: 
-    [br][br]
+    
     -Basic single user functionality
-    [br]
+    
     -Organizations support
-    [br]
+    
     -Attachments
-    [br]
+    
     -Vault API support
-    [br]
+    
     -Serving the static files for Vault interface
-    [br]
+    #xD;
     -Website icons API
-    [br]
+    
     -Authenticator and U2F support
-    [br]
+    
     -YubiKey OTP
-    [br][br]
-    For more configuration see the wiki
-    [br]
-    https://github.com/dani-garcia/vaultwarden/wiki
+    
+    For more configuration see the wiki https://github.com/dani-garcia/vaultwarden/wiki
   </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/88086-support-vaultwarden-formerly-bitwarden_rs/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/bitwardenrs.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>vaultwarden</font></b></td><td><em>Vaultwarden (formerly bitwarden_rs) is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.
-    [br][br]
+    
     Basically full implementation of Bitwarden API is provided including: 
-    [br][br]
+    
     -Basic single user functionality
-    [br]
+    
     -Organizations support
-    [br]
+    
     -Attachments
-    [br]
+    
     -Vault API support
-    [br]
+    
     -Serving the static files for Vault interface
-    [br]
+    #xD;
     -Website icons API
-    [br]
+    
     -Authenticator and U2F support
-    [br]
+    
     -YubiKey OTP
-    [br][br]
-    For more configuration see the wiki
-    [br]
-    https://github.com/dani-garcia/vaultwarden/wiki
+    
+    For more configuration see the wiki https://github.com/dani-garcia/vaultwarden/wiki
   </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/88086-support-vaultwarden-formerly-bitwarden_rs/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/wikijs.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>wikijs</font></b></td><td><em>A modern, lightweight and powerful wiki app built on NodeJS, Git and Markdown</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/xbackbone.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xbackbone</font></b></td><td><em>Container for XBackBone, a simple and lightweight ShareX PHP backend 
 [br][br]
 
@@ -5222,7 +5216,17 @@ VERSION
 Selfhosted web manga reader.
 
 VERSION
-v1.0 (2021-12-03)</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/116775-support-smartphonelover-tanoshi/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/webmail-lite-files_200x200.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Webmail-Lite-PHP</font></b></td><td><em>DESCRIPTION
+v1.0 (2021-12-03)</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/116775-support-smartphonelover-tanoshi/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/todo_200x200.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>todo</font></b></td><td><em>DESCRIPTION
+todo is a self-hosted todo web app that lets you keep track of your todos in a easy and minimal way.
+
+Here you have a live demo:
+https://todo.mills.io/
+
+NOTES
+• Check the GitMillis to fully custimize the appearance using optional variables.
+
+VERSION
+1.0 (2021-12-04)</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/116807-support-smartphonelover-todo/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/webmail-lite-files_200x200.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Webmail-Lite-PHP</font></b></td><td><em>DESCRIPTION
 Fast and easy-to-use webmail front-end for your existing IMAP mail server, Plesk or cPanel.
 
 Here you can check a demo version:
