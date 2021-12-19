@@ -113,14 +113,7 @@ cron options are updated on docker restart.
 cronjob changes doesnt require a restart.
 
 to test the cronjob functions 
-docker exec -it <dockername> ./config/cronjob.sh</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xteve, in docker with cronjobs
-
-docker runs in host mode 
-access xteve webui ip:34400/web/
-
-after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them
-
-cron and xteve start options are updated on docker restart.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xTeVe is a M3U proxy server for Plex, Emby and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats.
+docker exec -it <dockername> ./config/cronjob.sh</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xTeVe is a M3U proxy server for Plex, Emby and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats.
 
 Image Maintainer: LeeD 
 
@@ -128,7 +121,14 @@ For support come visit us at our xTeVe Discord channel: https://discord.gg/eWYqu
 
 For config, visit dockerhub link
 
-i just provided the template for unraid, for support see upper note</em></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve_g2g_owi</font></b></td><td><em>xteve, guide2go, owi2plex in one docker with cron
+i just provided the template for unraid, for support see upper note</em></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xteve, in docker with cronjobs
+
+docker runs in host mode 
+access xteve webui ip:34400/web/
+
+after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them
+
+cron and xteve start options are updated on docker restart.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve_g2g_owi</font></b></td><td><em>xteve, guide2go, owi2plex in one docker with cron
 
 access xteve webui ip:34400/web/
 
@@ -3527,7 +3527,51 @@ Choose your Volumes :
 
     /be_sorted
     /movies
-    /series</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/113419-support-search-and-sort-movies/' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>ken-ji's Repository</b></font><br><font size='2'><a href='https://github.com/roninkenji/unraid-docker-templates'>https://github.com/roninkenji/unraid-docker-templates</a></font><table><tr><td><img src='https://cf.dropboxstatic.com/static/images/icons/blue_dropbox_glyph-vflJ8-C5d.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Dropbox</font></b></td><td><em>[b]What is Dropbox?[/b][br/]
+    /series</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/113419-support-search-and-sort-movies/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/Olprog59/unraid-templates/main/tmpmail/logo.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Temp_Mail</font></b></td><td><em>tmpmail is a command line utility written in POSIX sh that allows you to create a temporary email address and receive emails to the temporary email address. It uses 1secmail's API to receive emails.
+
+By default w3m is used to render the HTML emails on the terminal.
+
+Check the log for the temporary email if not filled in.
+
+Command Example:
+- $tmpmail -r
+- $tmpmail 2533131
+
+https://www.1secmail.com
+https://github.com/sdushantha/tmpmail
+
+Dependencies: 
+- w3m 
+- curl
+- jq
+
+$ tmpmail --help
+tmpmail
+tmpmail -h | --version
+tmpmail -g 
+tmpmail  -r | ID
+
+When called with no option and no argument, tmpmail lists the messages in
+the inbox and their numeric IDs.  When called with one argument, tmpmail
+shows the email message with specified ID.
+
+-b, --browser BROWSER
+        Specify BROWSER (default: w3m) that is used to render the HTML of
+        the email
+-g, --generate 
+        Generate a new email address, either the specified ADDRESS, or
+        randomly create one
+-h, --help
+        Show help
+-r, --recent
+        View the most recent email message
+-t, --text
+        View the email as raw text, where all the HTML tags are removed.
+        Without this option, HTML is used.
+--version
+        Show version
+
+</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/117458-support-tmpmail/' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>ken-ji's Repository</b></font><br><font size='2'><a href='https://github.com/roninkenji/unraid-docker-templates'>https://github.com/roninkenji/unraid-docker-templates</a></font><table><tr><td><img src='https://cf.dropboxstatic.com/static/images/icons/blue_dropbox_glyph-vflJ8-C5d.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Dropbox</font></b></td><td><em>[b]What is Dropbox?[/b][br/]
 "One place for all your stuff, wherever you are."[br/]
 [br/]
 Dropbox is a home for all your photos, docs, videos, and files. Anything you add to Dropbox will automatically show up on all your computers, phones and even the Dropbox website... so you can access your stuff from anywhere.[br/]
@@ -4694,11 +4738,11 @@ curl -X POST --data-urlencode "url={{url}}" http://{{address}}:{{port}}/youtube-
     To run this you need legitimate copy of RTCW and RealRTCW from Steam.
     Copy all *.pk3 files from RTCW and RealRTCW to corresponding folders.
     If your server aren't visible in server browser - try to add [b]+net_ip [YOUR_IP] +net_port 27960[b] to [b]Post Arguments[b].
-  </em></td></tr><tr><td><img src='https://raw.githubusercontent.com/ivaxor/unraid-ca-docker-templates/main/shinobi.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Shinobi</font></b></td><td><em>Shinobi Pro - The Next Generation in Open-Source Video Management Software with support for over 6000 IP and USB Cameras</em></td></tr><tr><td><img src='https://raw.githubusercontent.com/ivaxor/unraid-ca-docker-templates/main/shinobi.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Shinobi-nvidia</font></b></td><td><em>Shinobi Pro - The Next Generation in Open-Source Video Management Software with support for over 6000 IP and USB Cameras</em></td></tr></table><font size='7'><b>sdesbure's Repository</b></font><br><font size='2'><a href='https://github.com/sdesbure/docker-containers'>https://github.com/sdesbure/docker-containers</a></font><table><tr><td><img src='https://raw.githubusercontent.com/sdesbure/docker-containers/master/images/t411-torznab-icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Domoticz</font></b></td><td><em>
-    Transform t411 in torznab compatible feeder for sonarr
-  </em></td><td><font color='red'><a href='https://github.com/KiLMaN/T411-Torznab/issues' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/sdesbure/docker-containers/master/images/domoticz-icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Domoticz</font></b></td><td><em>
+  </em></td></tr><tr><td><img src='https://raw.githubusercontent.com/ivaxor/unraid-ca-docker-templates/main/shinobi.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Shinobi</font></b></td><td><em>Shinobi Pro - The Next Generation in Open-Source Video Management Software with support for over 6000 IP and USB Cameras</em></td></tr><tr><td><img src='https://raw.githubusercontent.com/ivaxor/unraid-ca-docker-templates/main/shinobi.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Shinobi-nvidia</font></b></td><td><em>Shinobi Pro - The Next Generation in Open-Source Video Management Software with support for over 6000 IP and USB Cameras</em></td></tr></table><font size='7'><b>sdesbure's Repository</b></font><br><font size='2'><a href='https://github.com/sdesbure/docker-containers'>https://github.com/sdesbure/docker-containers</a></font><table><tr><td><img src='https://raw.githubusercontent.com/sdesbure/docker-containers/master/images/domoticz-icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Domoticz</font></b></td><td><em>
     An Home automation Server
-  </em></td><td><font color='red'><a href='https://lime-technology.com/forum/index.php?topic=41543.0' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/sdesbure/docker-containers/master/images/jackett-icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Jackett</font></b></td><td><em>
+  </em></td><td><font color='red'><a href='https://lime-technology.com/forum/index.php?topic=41543.0' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/sdesbure/docker-containers/master/images/t411-torznab-icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Domoticz</font></b></td><td><em>
+    Transform t411 in torznab compatible feeder for sonarr
+  </em></td><td><font color='red'><a href='https://github.com/KiLMaN/T411-Torznab/issues' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/sdesbure/docker-containers/master/images/jackett-icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Jackett</font></b></td><td><em>
     Use just about any tracker with Sonarr
   </em></td><td><font color='red'><a href='https://lime-technology.com/forum/index.php?topic=41543.0' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/sdesbure/docker-containers/master/images/netatmo_librato_logo.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Netatmo-Librato</font></b></td><td><em>
      pushes value from your netatmo thermostat and weather station to librato cloud metrics](https://www.librato.com/
@@ -4819,16 +4863,16 @@ Default Login ID & Password is [ admin / 12345 ]</em></td><td><font color='red'>
  - Automatically stores reading progress[br]
  - Built-in MangaDex downloader[br]
  - The web reader is responsive and works well on mobile, so there is no need for a mobile app[br]
-  </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/monica.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>monica</font></b></td><td><em>Monica, the Personal Relationship Manager
-[br][br]
-Complete list of env : https://raw.githubusercontent.com/monicahq/monica/master/.env.example
-[br][br]
-APP_URL: https://github.com/monicahq/monica/blob/master/docs/installation/ssl.md
   </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/monica.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>monica</font></b></td><td><em>
 Please Use monica rather than monicahq/monicahq
 
 
 Monica, the Personal Relationship Manager 
+[br][br]
+Complete list of env : https://raw.githubusercontent.com/monicahq/monica/master/.env.example
+[br][br]
+APP_URL: https://github.com/monicahq/monica/blob/master/docs/installation/ssl.md
+  </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/monica.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>monica</font></b></td><td><em>Monica, the Personal Relationship Manager
 [br][br]
 Complete list of env : https://raw.githubusercontent.com/monicahq/monica/master/.env.example
 [br][br]
