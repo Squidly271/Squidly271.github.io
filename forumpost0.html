@@ -3695,6 +3695,23 @@ Notes
  
 I made a small application that lists the docker containers that have a WebUI link.
 
+Environment variables:
+  - CIRCLE:
+      - yes : the background will have colored circles
+      - empty : no colored circles
+  
+  - HOST : (ex : unraid.duckdns.org)
+      - this variable allows you to put a DNS / DynDNS. This allows you to connect to this page outside your local network.
+      - empty : the address to access it will remain the local address
+  
+  - UNRAID_IP :
+      - if you have added a HOST, all your IP addresses will have your DNS / DynDNS even containers with another IP address. Enter your local IP address so different containers will keep their different address without it being replaced.
+      - empty : the address to access it will remain the local address
+  
+  - TITLE :
+      - This one allows you to change the title of the HTML page in the tab of your browser.
+      - empty: Docker WebUI
+
 A few things that are essential for this application to work properly:
   - Do not change the name of the application (Docker-WebUI). I have omitted the list with this name. If you change it then you will see it listed.
   - container: /data, host: /var/local/emhttp/plugins/dynamix.docker.manager
@@ -3702,6 +3719,9 @@ A few things that are essential for this application to work properly:
 Have fun.
  
 ----------------------- Update ---------------------------
+16 / 01 / 2022
+  - Add TITLE to change the title of your page in the browser tab.
+
 09 / 01 / 2022
   - Happy New Year
   - Add UNRAID_IP: This will determine if a container has its own IP or not. Fill in only if HOST is filled in.
