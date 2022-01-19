@@ -106,6 +106,8 @@ port 1080 socks proxy - edit in bridge mode to fit your needs</em></td><td><font
 
 after docker start check your config folder, add your *.ovpn file(s) and edit logindata.conf
 
+IMPORTANT, if ipv6 is active in your network, set in extra parameters ...disable_ipv6=1
+
 use privoxy on ip:8118
 use socks on ip:1080</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/alturismo/owi2plex/master/owi2plex.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>owi2plex</font></b></td><td><em>a xml grabber for enigma with open webif
 
@@ -115,7 +117,14 @@ cron options are updated on docker restart.
 cronjob changes doesnt require a restart.
 
 to test the cronjob functions 
-docker exec -it <dockername> ./config/cronjob.sh</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xTeVe is a M3U proxy server for Plex, Emby and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats.
+docker exec -it <dockername> ./config/cronjob.sh</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xteve, in docker with cronjobs
+
+docker runs in host mode 
+access xteve webui ip:34400/web/
+
+after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them
+
+cron and xteve start options are updated on docker restart.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xTeVe is a M3U proxy server for Plex, Emby and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats.
 
 Image Maintainer: LeeD 
 
@@ -123,14 +132,7 @@ For support come visit us at our xTeVe Discord channel: https://discord.gg/eWYqu
 
 For config, visit dockerhub link
 
-i just provided the template for unraid, for support see upper note</em></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xteve, in docker with cronjobs
-
-docker runs in host mode 
-access xteve webui ip:34400/web/
-
-after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them
-
-cron and xteve start options are updated on docker restart.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve_g2g_owi</font></b></td><td><em>xteve, guide2go, owi2plex in one docker with cron
+i just provided the template for unraid, for support see upper note</em></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve_g2g_owi</font></b></td><td><em>xteve, guide2go, owi2plex in one docker with cron
 
 access xteve webui ip:34400/web/
 
@@ -170,6 +172,8 @@ Schedules Direct web: http://www.schedulesdirect.org/
 some small script lines cause i personally use tvheadend and get playlist for xteve and cp xml data to tvheadend</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve_vpn</font></b></td><td><em>xteve, in docker with ovpn
 
 ### docker runs in bridge mode ###
+
+IMPORTANT, if ipv6 is active in your network, set in extra parameters ...disable_ipv6=1
 
 put your ovpn file in /config
 edit your ovpn credentials in /config
@@ -3574,10 +3578,6 @@ more bundled build tools
     The Ravencoin project is launched based on the hard work and continuous effort of over 400 Bitcoin developers who made over 14,000 commits over the life to date of the Bitcoin project.
     The GUI of the application is accessed through a modern web browser (no installation or configuration needed on client side) or via any VNC client.
     Also, being based on jlesage/baseimage-gui:ubuntu 18.04.
-  </em></td><td><font color='red'><a href='https://forums.unraid.net/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://github.com/angelics/unraid-docker-zelcore-wallet/raw/master/favicon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>ZelCoreWalletGUI</font></b></td><td><em>
-	ZelCore is a multi asset platform and wallet, free-to-use by all, with top quick-swap exchanges.
-	ZelCore+ unlocks advanced trading functionality with API integrations to the top exchanges + TradingView.
-	based on jlesage's works!
   </em></td><td><font color='red'><a href='https://forums.unraid.net/' target='_blank'>Support</a></font></td></tr></table><font size='7'><b>José Coelho's Repository</b></font><br><font size='2'><a href='https://github.com/josecoelho/unraid-templates'>https://github.com/josecoelho/unraid-templates</a></font><table><tr><td><img src='https://raw.githubusercontent.com/josecoelho/unraid-templates/main/cups/cups.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>cups</font></b></td><td><em>Docker image including CUPS print server and printing drivers (installed from the Debian packages).
 
 Connect to the Cups server at http://127.0.0.1:631
@@ -5109,16 +5109,16 @@ Default Login ID & Password is [ admin / 12345 ]</em></td><td><font color='red'>
  - Automatically stores reading progress[br]
  - Built-in MangaDex downloader[br]
  - The web reader is responsive and works well on mobile, so there is no need for a mobile app[br]
+  </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/monica.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>monica</font></b></td><td><em>Monica, the Personal Relationship Manager
+[br][br]
+Complete list of env : https://raw.githubusercontent.com/monicahq/monica/master/.env.example
+[br][br]
+APP_URL: https://github.com/monicahq/monica/blob/master/docs/installation/ssl.md
   </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/monica.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>monica</font></b></td><td><em>
 Please Use monica rather than monicahq/monicahq
 
 
 Monica, the Personal Relationship Manager 
-[br][br]
-Complete list of env : https://raw.githubusercontent.com/monicahq/monica/master/.env.example
-[br][br]
-APP_URL: https://github.com/monicahq/monica/blob/master/docs/installation/ssl.md
-  </em></td><td><font color='red'><a href='https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/monica.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>monica</font></b></td><td><em>Monica, the Personal Relationship Manager
 [br][br]
 Complete list of env : https://raw.githubusercontent.com/monicahq/monica/master/.env.example
 [br][br]
