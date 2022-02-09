@@ -117,14 +117,7 @@ cron options are updated on docker restart.
 cronjob changes doesnt require a restart.
 
 to test the cronjob functions 
-docker exec -it <dockername> ./config/cronjob.sh</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xteve, in docker with cronjobs
-
-docker runs in host mode 
-access xteve webui ip:34400/web/
-
-after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them
-
-cron and xteve start options are updated on docker restart.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xTeVe is a M3U proxy server for Plex, Emby and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats.
+docker exec -it <dockername> ./config/cronjob.sh</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xTeVe is a M3U proxy server for Plex, Emby and any client and provider which supports the .TS and .M3U8 (HLS) streaming formats.
 
 Image Maintainer: LeeD 
 
@@ -132,7 +125,14 @@ For support come visit us at our xTeVe Discord channel: https://discord.gg/eWYqu
 
 For config, visit dockerhub link
 
-i just provided the template for unraid, for support see upper note</em></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve_g2g_owi</font></b></td><td><em>xteve, guide2go, owi2plex in one docker with cron
+i just provided the template for unraid, for support see upper note</em></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve</font></b></td><td><em>xteve, in docker with cronjobs
+
+docker runs in host mode 
+access xteve webui ip:34400/web/
+
+after docker start check your config folder and do your setups, setup is persistent, start from scratch by delete them
+
+cron and xteve start options are updated on docker restart.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/81786-support-alturismo-repos/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://avatars0.githubusercontent.com/u/53275662?s=460&amp;v=4' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>xteve_g2g_owi</font></b></td><td><em>xteve, guide2go, owi2plex in one docker with cron
 
 access xteve webui ip:34400/web/
 
@@ -5019,7 +5019,7 @@ https://www.bundesnetzagentur.de/DE/Sachgebiete/Telekommunikation/Unternehmen_In
 Go to the Config directory and create a file called "config.cfg" with the content:
 
 timezone=Europe/Berlin
-crontab=0 * * * *
+crontab=* */2 * * *
 run_once=true
 run_on_startup=true
 
@@ -5950,7 +5950,16 @@ NOTES
 • If you want to update the container settings (variables) after creation, you will need to edit the config file manually. (only applicable for persistent variables)
 
 VERSION
-1.0 (2021-12-11)</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/117122-support-smartphonelover-gokapi/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/h5ai_200x200.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>h5ai</font></b></td><td><em>DESCRIPTION
+1.0 (2021-12-11)</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/117122-support-smartphonelover-gokapi/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/gonic.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Gonic</font></b></td><td><em>DESCRIPTION
+FLOSS alternative to subsonic, supporting its many clients.
+
+NOTES
+• The default credentials: admin/admin (user/pass).
+• You have other variables that you can use to fully customize the service. Check 'https://github.com/sentriz/gonic#configuration-options' to know more.
+• To configure 'jukebox' checl the GitHub repo: 'https://github.com/sentriz/gonic#with-docker'.
+
+VERSION
+1.0 (2022-02-09)</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/119824-support-smartphonelover-gonic/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/h5ai_200x200.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>h5ai</font></b></td><td><em>DESCRIPTION
 h5ai is a modern file indexer for HTTP web servers with focus on your files. Directories are displayed in a appealing way and browsing them is enhanced by different views, a breadcrumb and a tree overview. Initially h5ai was an acronym for HTML5 Apache Index but now it supports other web servers too.
 
 Live demo:
@@ -6304,7 +6313,29 @@ NOTES
 • The container was and stills being originally designed to be non-persistent (data) after service restart or after a given time, so all information that the user could enter through its interface will be treated as volatile. But, it supports the use of SQLite DB to allow it to retain data in case of service restart (only).
 
 VERSION
-1.0 (2022-01-29)</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/119282-support-smartphonelover-rustpad/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/sharry2.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Sharry</font></b></td><td><em>DESCRIPTION
+1.0 (2022-01-29)</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/119282-support-smartphonelover-rustpad/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/rustypaste.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>RustyPaste</font></b></td><td><em>DESCRIPTION
+Rustypaste is a minimal file upload/pastebin service.
+
+How to upload files to the server?
+You have three main different ways by wich you can upload files to your RustyPaste server.
+• [UI] Using some kind of web-based file browser, like: Krusader, File Browser or MC from Terminal).
+For example, using Krusader, copy/move and paste the decided file on '/.../rustypaste/upload/*' directory.
+• [CLI] Using the 'curl' command.
+This method offers you two different ways by wich you can upload files to your server:
+1. Locally...
+Use the cmd 'curl -F 'file=@file_name.ext' server_addres'. Example: 'curl -F 'file=pink_house.jpg' 192.168.1.100:8059'.
+2. Remotly...
+Use the cmd 'curl -F 'url=https://server.com/file_name.ext" server_addres'. Example: 'curl -F 'file=https://pinkserver.com/pink_house.jpg' 192.168.1.100:8059'.
+
+How do I call my files from the server?
+It's as simple as writing 'server_address/file_name.ext' from any web browser, or you can use 'curl server_address/file_name.ext'.
+
+NOTES
+• Run the following cmds before creating the container: 'mkdir -m777 -p /mnt/user/appdata/rustypaste/uploads' and 'curl https://raw.githubusercontent.com/orhun/rustypaste/master/config.toml --output /mnt/user/appdata/rustypaste/config.toml'.
+• You have many other parameters to pass to the server when uploading a file, like: one shot links, random file names, time expiration, url shortening, use credentials when using HTTP POST. Chech the GitHub repo to know more: 'orhun/rustypaste-cli.'
+
+VERSION
+1.0 (2022-02-09)</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/119816-support-smartphonelover-rustypaste/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/sharry2.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Sharry</font></b></td><td><em>DESCRIPTION
 Sharry allows to share files with others in a simple way. It is a self-hosted web application. The basic concept is: upload files and get a url back that can then be shared.
 
 NOTES
