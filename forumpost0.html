@@ -4854,7 +4854,59 @@ Will need to be placed into your Host Path 1.
 More info: 
  https://github.com/grafana/loki/blob/master/docs/clients/promtail/configuration.md</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/94021-support-natcoso9955-loki/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://github.com/natcoso9955/unRAID-docker/raw/master/icons/influx_logo.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>kapacitor</font></b></td><td><em>Kapacitor is a native data processing engine for InfluxDB 1.x and is an integrated component in the InfluxDB 2.0 platform.
 
-Kapacitor can process both stream and batch data from InfluxDB, acting on this data in real-time via its programming language TICKscript.</em></td><td><font color='red'><a href='https://hub.docker.com/_/kapacitor/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://github.com/natcoso9955/unRAID-docker/raw/master/icons/rcon-webadmin.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>RCON-WebAdmin</font></b></td><td><em>Out of the box, RCON Web Admin can check users for high ping, VAC status, or filter the chat for you around the clock.
+Kapacitor can process both stream and batch data from InfluxDB, acting on this data in real-time via its programming language TICKscript.</em></td><td><font color='red'><a href='https://hub.docker.com/_/kapacitor/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://github.com/natcoso9955/unRAID-docker/raw/master/icons/projectzomboid-api.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>ProjectZomboidReporter-API</font></b></td><td><em>This api is used to access your project zomboid data stored in sql to pass to the main reporter.
+
+NOTE: if your sql database is not running on the default port, you will need to provide a value for it below
+You will also need to complete the index.js override path below.
+The current image doesnt allow for a custom sql port, tweaked file available below.
+
+Fixed index.js: https://raw.githubusercontent.com/natcoso9955/Zomboid-Server-Stats-Reporter/main/backend/index.js</em></td><td><font color='red'><a href='https://github.com/ChrisAshtear/Zomboid-Server-Stats-Reporter/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://github.com/natcoso9955/unRAID-docker/raw/master/icons/projectzomboid-template.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>ProjectZomboidReporter-Frontend</font></b></td><td><em>This is the frontend template used in the Project Zomboid Reporter. All visuals used in the final Reporter are pulled from here.</em></td><td><font color='red'><a href='https://github.com/ChrisAshtear/Zomboid-Server-Stats-Reporter/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://github.com/natcoso9955/unRAID-docker/raw/master/icons/projectzomboid-ingest.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>ProjectZomboidReporter-Ingester</font></b></td><td><em>This is the ingester which grabs statiscs from your Project Zomboid server files and uploads them to the SQL database for the API to access.
+
+NOTE: if you havnt had a player connect to your server yet, you will get an error.
+
+If you are having issues with the database tables not being autocreated, connect to the database with adminer (or another program of your choice) and create the tables and structure with the following:
+
+USE `Zombo`;
+
+SET NAMES utf8mb4;
+
+CREATE TABLE `Game` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `dayofmonth` int NOT NULL,
+  `month` int NOT NULL,
+  `daysSinceStart` int NOT NULL,
+  `name` text NOT NULL,
+  `maxPlayers` int NOT NULL,
+  `startDay` int NOT NULL,
+  `startMonth` int NOT NULL,
+  `startYear` int NOT NULL,
+  `year` int NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `Players` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` text NOT NULL,
+  `charname` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `x` float NOT NULL,
+  `y` float NOT NULL,
+  `data` blob NOT NULL,
+  `lastOnline` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;</em></td><td><font color='red'><a href='https://github.com/ChrisAshtear/Zomboid-Server-Stats-Reporter/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://github.com/natcoso9955/unRAID-docker/raw/master/icons/projectzomboid-web.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>ProjectZomboidReporter-Web</font></b></td><td><em>This is an nginx server with a custom conf applied. It will grab combined API calls to the api endpoint, and also components from the frontend template.
+
+You will need to download the conf file from the below and modify the below lines to match your server ip, then place in the appdata folder.
+
+https://raw.githubusercontent.com/natcoso9955/Zomboid-Server-Stats-Reporter/main/nginx/default.conf
+
+upstream client {
+  server YOURSERVERIPHERE:3000;
+}
+
+upstream api {
+  server YOURSERVERIPHERE:3001;
+}</em></td><td><font color='red'><a href='https://github.com/ChrisAshtear/Zomboid-Server-Stats-Reporter/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://github.com/natcoso9955/unRAID-docker/raw/master/icons/rcon-webadmin.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>RCON-WebAdmin</font></b></td><td><em>Out of the box, RCON Web Admin can check users for high ping, VAC status, or filter the chat for you around the clock.
 
 This image lets you run the rcon-web-admin administration tool as a Docker container. A great benefit of running rcon-web-admin in Docker, especially in a Docker Composition is that the RCON port of your game server can remain securely isolated within the Docker network.
 
