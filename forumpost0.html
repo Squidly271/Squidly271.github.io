@@ -4163,26 +4163,7 @@ After starting the container, open its console and execute the following for "Ba
 or this if you choosed "Digest" authentification:
 [b]htdigest user.passwd WebDAV-Login John[/b]
 
-Execute the command multiple times with different usernames to add more users.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/103601-support-apache-webdav/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/mgutt/unraid-docker-templates/main/mgutt/images/dropbox.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Dropbox-by-otherguy</font></b></td><td><em>Dropbox client which syncs a local path with your cloud.
-
-Manual:
-After installing the Dropbox container
-- open the container overview
-- click on the logs icon
-- wait until you are prompted to visit a Dropbox URL
-- Copy and Paste the URL and link the container with your Dropbox account
-- the container automatically starts syncing
-
-IMPORTANT:
-The official Dropbox client (which is used in this container) does not support FUSE filesystems. Because of that its NOT possible to use the path "/mnt/user" as your user file path. You MUST use one of these direct disk paths:
-
-If your Dropbox share has the cache setting "No":
-/mnt/disk1/Dropbox
-
-If your "Dropbox" share has the cache setting "Only":
-/mnt/cache/Dropbox
-
-You could even use "/mnt/disk1/Dropbox" with the cache Option "Yes", but if you add new files to this share, they won't be uploaded to Dropbox as long the Mover did not move them to the array.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/104437-support-dropbox-by-otherguy/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/mgutt/unraid-docker-templates/main/mgutt/images/iobroker.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>iobroker</font></b></td><td><em>ioBroker is an Open Source IoT platform (Fog computing) which has the ability to manage your IoT system through an graphical interface.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/101016-support-buanet-iobroker/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://github.com/mgutt/unraid-docker-templates/raw/main/mgutt/images/mariadb.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>MariaDB-Official</font></b></td><td><em>Official MariaDB database container. It allows to set a database and username without using the console.
+Execute the command multiple times with different usernames to add more users.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/103601-support-apache-webdav/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/mgutt/unraid-docker-templates/main/mgutt/images/iobroker.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>iobroker</font></b></td><td><em>ioBroker is an Open Source IoT platform (Fog computing) which has the ability to manage your IoT system through an graphical interface.</em></td><td><font color='red'><a href='https://forums.unraid.net/topic/101016-support-buanet-iobroker/' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://github.com/mgutt/unraid-docker-templates/raw/main/mgutt/images/mariadb.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>MariaDB-Official</font></b></td><td><em>Official MariaDB database container. It allows to set a database and username without using the console.
 
 MariaDB is a community-developed, commercially supported fork of MySQL (RDBMS).
 
