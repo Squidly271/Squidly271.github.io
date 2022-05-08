@@ -3614,6 +3614,9 @@ A few things that are essential for this application to work properly:
 Have fun.
  
 ----------------------- Update ---------------------------
+07 / 05 / 2022
+  - Add Variable PORT to change the internal port of the application. ⚠️  If you change the default port 8080, don't forget to change it in the WebUI => Container Port variable.
+
 16 / 01 / 2022
   - Add TITLE to change the title of your page in the browser tab.
 
@@ -3738,22 +3741,22 @@ Dropbox also makes it super easy to share with others, whether you're a student 
  
 To test notifications two methods exist:
 1) Add "test:notification:production" (no quotes) to the extra parameters.  The system will exit after one notification has been sent.
-2) Set the following SHOW_ONLY_SERIES variable to "test:series".</em></td></tr></table><font size='7'><b>Kippenhof's Repository</b></font><br><font size='2'><a href='https://github.com/Kippenhof/docker-templates'>https://github.com/Kippenhof/docker-templates</a></font><table><tr><td><img src='https://github.com/actualbudget/actual/raw/master/packages/desktop-electron/icons/icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>ActualServer</font></b></td><td><em>Actual is a super fast privacy-focused app for managing your finances. You own your data, and it will sync it across all devices with optional end-to-end encryption..
+2) Set the following SHOW_ONLY_SERIES variable to "test:series".</em></td></tr></table><font size='7'><b>Kippenhof's Repository</b></font><br><font size='2'><a href='https://github.com/Kippenhof/docker-templates'>https://github.com/Kippenhof/docker-templates</a></font><table><tr><td><img src='https://github.com/actualbudget/actual/raw/master/packages/desktop-electron/icons/icon.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>ActualServer</font></b></td><td><em>Actual is a super fast privacy-focused app for managing your finances. You own your data and it will sync it across all devices with optional end-to-end encryption..
 
-The Software was Created by The Actual Team.
+The Software was created by The Actual Team.
 
-Github-Repo of the The Client:https://github.com/actualbudget/actual | Github-Repo of the Server: https://github.com/actualbudget/actual-server</em></td><td><font color='red'><a href='https://github.com/hofq/docker-templates/issues/new' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/HOF-Clan/big-ben-clock-discord-bot-docker/master/Assets/logo.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Bigben-Discord</font></b></td><td><em>Big Ben Clock Discord-Bot is an self-hosted (useless) Discord Bot, that joins every Hour in an pre selected Voice channel, and plays the Big Ben Bells, to inform you, that you have entered an new Hour.
+Client GitHub repo: https://github.com/actualbudget/actual | Server GitHub repo: https://github.com/actualbudget/actual-server</em></td><td><font color='red'><a href='https://github.com/hofq/docker-templates/issues/new' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/HOF-Clan/big-ben-clock-discord-bot-docker/master/Assets/logo.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Bigben-Discord</font></b></td><td><em>Big Ben Clock Discord-Bot is an self-hosted (useless) Discord bot that joins every hour in an pre selected voice channel and plays the Big Ben bells to inform you that you have entered a new hour.
 
-The Bot was Created by jamiesage123 and Dockerzied by me. (Kippenhof)
+The bot was created by jamiesage123 and Dockerzied by me. (Kippenhof)
 
-Github-Repo of the Bot: https://github.com/HOF-Clan/big-ben-clock-discord-bot-docker | Unraid-Template-Repo: https://github.com/hofq/docker-templates</em></td><td><font color='red'><a href='https://github.com/hofq/docker-templates/issues/new' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/Kippenhof/docker-templates/main/pictures/neko-logo.svg' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>neko</font></b></td><td><em>Neko is an Open-Source self-hosted Alternative to rabb.it(deprecated).
+Bot GitHub repo: https://github.com/HOF-Clan/big-ben-clock-discord-bot-docker | Unraid-Template repo: https://github.com/hofq/docker-templates</em></td><td><font color='red'><a href='https://github.com/hofq/docker-templates/issues/new' target='_blank'>Support</a></font></td></tr><tr><td><img src='https://raw.githubusercontent.com/Kippenhof/docker-templates/main/pictures/neko-logo.svg' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>neko</font></b></td><td><em>Neko is an Open-Source self-hosted alternative to rabb.it(deprecated).
 It Provide an Web-UI which is Secured by an Password.
 
-You can Easily Host it behind an Reverse-Proxy
+You can easily host it behind a reverse proxy
 
-For Install-Docs & Sample Confs visit:
-https://github.com/Kippenhof/docker-templates/wiki/Neko</em></td></tr><tr><td><img src='https://raw.githubusercontent.com/Kippenhof/docker-templates/main/pictures/win11react.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Win11-in-React</font></b></td><td><em>Windows 11 in React is an Windows 11 Web-Clone in React.
-It is not an full fledged Operating System, more like a gimmick.
+For Install-Docs & sample confs visit:
+https://github.com/Kippenhof/docker-templates/wiki/Neko</em></td></tr><tr><td><img src='https://raw.githubusercontent.com/Kippenhof/docker-templates/main/pictures/win11react.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Win11-in-React</font></b></td><td><em>Windows 11 in React is a Windows 11 web clone written in React.
+It is not an fully fledged Operating System, more like a gimmick.
 
 
 Original Repository:
@@ -3939,7 +3942,8 @@ https://github.com/JustArchiNET/ArchiSteamFarm/wiki
 
 ASF is a C# application with primary purpose of idling Steam cards from multiple accounts simultaneously. Unlike Idle Master which works only for one account at given time, while requiring Steam client running in the background and launching additional processes imitating "game playing" status, ASF doesn't require any Steam client running in the background, doesn't launch any additional processes and is made to handle unlimited Steam accounts at once. In addition to that, it's meant to be run on servers or other desktop-less machines, and features full cross-OS support, which makes it possible to launch on any operating system with .NET Core runtime, such as Windows, Linux and OS X. ASF is possible thanks to gigantic amount of work done in marvelous SteamKit2 library.
 
-Today, ASF is one of the most versatile Steam power tools, allowing you to make use of many features that were implemented over time. Apart from idling Steam cards, which remains the primary focus, ASF includes bunch of features on its own, such as a possibility to use it as Steam authenticator or chat logger. In addition to that, ASF includes plugin system, thanks to which anybody can further extend it to his/her needs.</em></td></tr><tr><td><img src='https://raw.githubusercontent.com/L4stIdi0t/Unraid-template/master/Spotweb/spotweb-logo.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Spotweb</font></b></td><td><em>Spotweb is a decentralized usenet community based on the Spotnet protocol.
+Today, ASF is one of the most versatile Steam power tools, allowing you to make use of many features that were implemented over time. Apart from idling Steam cards, which remains the primary focus, ASF includes bunch of features on its own, such as a possibility to use it as Steam authenticator or chat logger. In addition to that, ASF includes plugin system, thanks to which anybody can further extend it to his/her needs.</em></td></tr><tr><td><img src='https://raw.githubusercontent.com/chvb/docker-templates/master/chvb/img/collabora.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Collabora-CODE</font></b></td><td><em>Updated to not use domain enviroment variable
+Collabora/Code Online Development Edition - an awesome, Online Office suite image suitable for home use. You can use Collabora/Code for your Nextcloud an edit your Office Documents Online!</em></td></tr><tr><td><img src='https://raw.githubusercontent.com/L4stIdi0t/Unraid-template/master/Spotweb/spotweb-logo.png' width='96px' onerror='this.src=&quot;https://github.com/limetech/webgui/raw/master/plugins/dynamix.docker.manager/images/question.png&quot;'></img></td><td><b><font size='2'>Spotweb</font></b></td><td><em>Spotweb is a decentralized usenet community based on the Spotnet protocol.
 
 The only required manual configuration is setting up a valid usenet server. You can follow this https://github.com/L4stIdi0t/Unraid-template/blob/master/Spotweb/write-up-spotweb.md 
 
